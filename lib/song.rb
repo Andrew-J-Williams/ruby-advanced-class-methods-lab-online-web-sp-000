@@ -69,6 +69,6 @@ class Song
   end
 
   def self.destroy_all
-    self.all.clear
+    self.all.clear # We call the 'all' method within our 'Song' class and use '.clear' to delete the contents from our array.
   end
 end
