@@ -57,7 +57,7 @@ class Song
     artist_name = file[0]
     name = file[1]
 
-    song.name = name.split(".mp3")
+    song.name = name
     song.artist_name = artist_name
     song
   end
