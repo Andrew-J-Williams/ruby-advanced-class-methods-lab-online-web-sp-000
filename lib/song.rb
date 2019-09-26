@@ -25,10 +25,14 @@ class Song
   end
 
   def self.create_by_name(name)
-    song = self.new
-    song.name = name
+    song = self.new # instantiation line
+    song.name = name  # Assigns the song.name equal to the string entered
 
-    song.save
-    song
+    song.save # Saves our song
+    song # Returns our song
   end
+
+  def self.find_by_name
+
+
 end
