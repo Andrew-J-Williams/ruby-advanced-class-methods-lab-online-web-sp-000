@@ -48,7 +48,6 @@ class Song
 
   def self.alphabetical
     @@all.sort_by {|a,b| a.name <=> b.name}
-    alpha_orde
   end
 
 end
