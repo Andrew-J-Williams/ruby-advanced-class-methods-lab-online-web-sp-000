@@ -18,10 +18,16 @@ class Song
   end
 
   def self.new_by_name(name)
+    song = self.new # This line instantiates our song.
+    song.name = name # Then, with dot notation, set song.name equal to our name variable.
+
+    song # Finally, as before, we return our song.
+  end
+
+  def self.create_by_name(name)
     song = self.new
     song.name = name
 
+    song.save
     song
-  end
-
 end
