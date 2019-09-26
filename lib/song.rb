@@ -11,7 +11,8 @@ class Song
   end
 
   def self.create
-    @@all << new
+    song = new
+    
   end
 
 end
