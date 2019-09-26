@@ -64,7 +64,7 @@ class Song
 
   def self.create_from_filename(filename)
     song = self.new_from_filename(filename) # We set song equal to the result of our previous method
-    song.save # Then we use our save method in conjunction with our variable to save the format
+    song.save # Then we use our save method in conjunction with our variable to save the file format
     song
   end
 end
