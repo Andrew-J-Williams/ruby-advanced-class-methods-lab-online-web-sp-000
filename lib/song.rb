@@ -7,7 +7,7 @@ class Song
   end
 
   def save
-    self.class.all << self
+    self.class.all << self # We are calling the class 'all' method through this instance
   end
 
   def self.create
