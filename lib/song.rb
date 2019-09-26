@@ -57,9 +57,9 @@ class Song
     artist_name = file[1]
     name = file[0]
 
-    
-
-
+    song.name = name
+    song.artist_name = artist_name
+    song
   end
 
 end
