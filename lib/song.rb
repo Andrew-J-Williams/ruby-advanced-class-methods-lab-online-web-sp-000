@@ -36,12 +36,11 @@ class Song
     @@all.find{|song_name| song_name.name == song} # We add .name to block variable to search for just the song names, then comparing to our song variable.
   end
 
-  def self.find_or_create_by_name(song)
-    if self.find_by_name(song) == true
-      song.name = song
-      song
+  def self.find_or_create_by_name(name)
+    if self.find_by_name(name) == true
+
     else
-      self.create_by_name(song)
+      self.create_by_name(name)
     end
   end
 
