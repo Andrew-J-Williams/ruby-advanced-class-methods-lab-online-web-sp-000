@@ -11,10 +11,10 @@ class Song
   end
 
   def self.create
-    song = self.new
-    song.save
+    song = self.new # This line instantiates our song
+    song.save # We call the save method to save our song on this line
 
-    song
+    song # Finally, we 
   end
 
 end
