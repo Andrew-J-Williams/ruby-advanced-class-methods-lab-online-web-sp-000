@@ -54,6 +54,7 @@ class Song
     song = self.new
 
     file = filename.split(" - ")
+    file[0] =
 
   end
 
