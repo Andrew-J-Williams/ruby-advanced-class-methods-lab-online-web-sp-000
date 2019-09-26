@@ -57,6 +57,8 @@ class Song
     artist_name = file[1]
     name = file[0]
 
+    
+
 
   end
 
