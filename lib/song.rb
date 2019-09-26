@@ -42,10 +42,13 @@ class Song
     else # But if our find_by_name returns a falsey ('nil') value, indicating the song is not in our array...
       self.create_by_name(name) # We call the create_by_name method to save that song and title.
     end
+    # Alternative Solution
+    # self.find_by_name(name) || self.create_by_name(name)
   end
 
   def self.alphabetical
-    @@all.sort{|a,b| a <=> b}
+    alpha_order = @@all.sort_by {|a,b| a <=> b}
+    alpha_order
   end
 
 end
