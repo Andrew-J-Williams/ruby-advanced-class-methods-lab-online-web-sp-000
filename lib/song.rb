@@ -54,6 +54,7 @@ class Song
     song = self.new
 
     file = filename.split(" - ")
+    artist_name = file[1]
     name = file[0]
     
 
