@@ -18,7 +18,7 @@ class Song
   end
 
   def self.new_by_name(song)
-    
+    @@all.find{|song_name| song_name == song}
 
   end
 
