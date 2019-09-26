@@ -63,16 +63,8 @@ class Song
   end
 
   def self.create_from_filename(filename)
-    song = self.new # instantiates our song
-
-    file = filename.split(" - ") # Sets file equal to an array our our filename variable, where elements are separated by the dash
-    artist_name = file[0] # Sets artist_name equal to the first value of the array
-    name = file[1] # Likewise for name
-
-    song.name = name.chomp(".mp3") # We use 'chomp' to remove the '.mp3' from the end of our string, just to return the name
-    song.artist_name = artist_name
-    song.save
+    self.new_from_filename(filename)
+    song.save #
     song
-
   end
 end
