@@ -32,7 +32,7 @@ class Song
     song # Returns our song
   end
 
-  def self.find_by_name(song) # We use the 'find' method to search our 'all' array. 
+  def self.find_by_name(song) # We use the 'find' method to search our 'all' array.
     @@all.find{|song_name| song_name.name == song} # We add .name to block variable to search for just the song names, then comparing to our song variable.
   end
 
