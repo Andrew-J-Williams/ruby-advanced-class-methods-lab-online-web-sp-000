@@ -18,8 +18,8 @@ class Song
   end
 
   def self.new_by_name(song)
-    @name = song
-    @name
+    
+
   end
 
 end
