@@ -67,4 +67,8 @@ class Song
     song.save # Then we use our save method in conjunction with our variable to save the file format
     song
   end
+
+  def self.destroy_all
+    self.all.clear
+  end
 end
