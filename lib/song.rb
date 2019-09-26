@@ -37,11 +37,13 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    if self.find_by_name(name) # If 
-      self.find_by_name(name)
-    else
-      self.create_by_name(name)
+    if self.find_by_name(name) # If the song exists in our 'all', a truthy value will be returned. If it's true...
+      self.find_by_name(name) # We then return the Song object once the title is put in our find_by_name method
+    else # But if our find_by_name returns a falsey ('nil') value, indicating the song is not in our array...
+      self.create_by_name(name) # We call the create_by_name method to save that song and title.
     end
   end
+
+  def self.alphabetical
 
 end
