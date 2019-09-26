@@ -17,8 +17,8 @@ class Song
     song # Finally, we return the new song that was just created.
   end
 
-  def self.new_by_name
-    new_name = self.create
+  def self.new_by_name(song)
+    
   end
 
 end
